@@ -1,112 +1,200 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+  <html lang="en">
     <head>
-        <title>My portfolio page</title>
-        <link
-            rel="stylesheet"
-            type="text/css"
-            href="style.css"
-        />
+      <title>Page Title</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <style>
+        * {
+            box-sizing: border-box;
+          }
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+          margin: 0;
+        }
+        .header {
+          padding: 80px;
+          text-align: center;
+          background: #0d2c40;
+          color: yellow;
+          text-shadow:
+            0 0 10px #fff,
+            0 0 21px #fff,
+            0 0 42px #f09,
+            0 0 82px #f09,
+            0 0 92px #f09,
+            0 0 102px #f09,
+            0 0 151px #f09;
+          }
+          .header h1 {
+            font-size: 40px;
+          }
+          .navbar {
+            overflow: hidden;
+            background-color: #cc0033;
+          }
+          .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+          }
+          .navbar a.right {
+            float: right;
+            box-shadow: 0 0 100px rgb(226, 226, 226);
+          }
+          .navbar a:hover {
+            background-color: #ffccff;
+            color: black;
+            text-shadow:
+            0 0 10px #fff,
+            0 0 21px #ffffcc,
+            0 0 42px #ffff99,
+            0 0 82px #ffff66,
+            0 0 92px #ffff33,
+            0 0 102px #ffff00,
+            0 0 151px #f09;
+          }
+          .row {  
+            display: -ms-flexbox; /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap; /* IE10 */
+            flex-wrap: wrap;
+          }
+          .side {
+            -ms-flex: 70%; /* IE10 */
+            flex: 70%;
+            background-color: #c879b2;
+            padding: 10px;
+            padding-left: 10px;
+            justify-content: space-evenly;
+          }
+          .main {   
+            -ms-flex: 70%; /* IE10 */
+            flex: 70%;
+            background-color: black;
+            padding: 20px;
+          }
+          .fakeimg {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+          }
+          .footer {
+            padding: 20px;
+            text-align: center;
+            background:black;
+          }
+          @media screen and (max-width: 700px) {
+            .row {   
+              flex-direction: column;
+            }
+          }
+          @media screen and (max-width: 400px) {
+            .navbar a {
+              float: none;
+              width: 100%;
+            }
+          }
+          .GFG {
+            width: 240px;
+            height: 250px;
+            border-radius: 10%;
+            padding-bottom: 200;
+            background-color: #603;
+            color:white;
+          }         
+          .GFG:hover {
+            color: #111;
+            background-color: #603;
+            box-shadow: 0 0 100px #ffff66;
+  
+          }
+          .side {
+            -ms-flex: 30%; /* IE10 */
+            flex: 70%;
+            background-color: #603;
+            color:white;
+            justify-content: space-evenly;
+            float: left;
+            position: relative;
+            display: flex;
+	          position: center;
+            align-items: space-around;
+	          justify-content:center;
+          }
+          .images{
+            background-color: #603;
+            position: relative;
+            display: flex;
+	          position: center;
+            align-items: space-around;
+	          justify-content:center;
+          }
+          .img{
+            position: absolute;
+            top: 207px;
+            left: 60px;
+          }
+      </style>
     </head>
-
-    <body>
-        <div class= "header">
-            <h2><b><i>.............................................................Origami Website...............................................</h2>
-            <div class="menu">
-                <!-- <a href="index.html">Origami</a>
-                <a href="aboutme.html">About me</a> -->
-            </div>
+    <div class="header">
+      <h1>My Website</h1>
+      <p>A website created by me.</p>
+    </div>
+    <div class="navbar">
+      <a href="https://aditineemkar.whjr.site">My Personal Wesite</a>
+      <a href="https://community.whitehatjr.com/profile/92aaa58b-264a-4b6a-a91d-cf77da83ab24">My Projects</a>
+      <a href="https://codepen.io/Aditineemkar">Contact</a>
+      <a href="https://github.com/aditineemkar" class="right">Github</a>
+    </div>
+    <div class="images">
+      <div class="side">
+        <a href="https://sreedeepta.whjr.site"><img class="GFG" src="../sree.png"/></a>          
+        <div class="img">
+        <p>Sreedeepta Mitra</p>
         </div>
-        <p>Learn to make paper origamies </p>
-        <div class="grid">
-            <div class="title">
-                <a href="https://origami.me/camel/"><img src="https://origami.me/wp-content/uploads/2018/05/camel-19-min.jpg "width=300 height=300/></a>
-            <div class="head">
-                <h1>Camel</br>
-                </div>
-                <h1><u>Intresting Facts About Camel</u></br>
-                <h3> Camels are social animals who roam the deserts in search of food and water with up to 30 other individuals.</br>
-                </br>
-                    Camels’ ears are small and hairy. However their sense of hearing is also extremely strong.</br>
-                </br>
-                The amount of water a camel drinks on a day-to-day basis can vary greatly, as they drink to replace only the fluid they’ve lost. A thirsty camel can drink up to 135 liters in one sitting!
-            </br>
-                </p>
-                </p>
-
-            </div>
-            <div class="item">
-                <a href="https://origami.me/chameleon/"><img src="https://origami.me/wp-content/uploads/2018/05/chameleon-13-min.jpg"width=300 height=300/></a>
-                <div class="head">
-                    <h1>Chameleon </br>
-                </div>
-                    <h1><u>Intresting Facts About Chameleon</u> </br>
-                    <h3>Chameleons have eyes in the backs of their heads</br>
-                    </br>
-                    Special color pigment cells under the skin called chromatophores allow some chameleon species to change their skin color, creating combined patterns of pink, blue, red, orange, green, black, brown, yellow and purple.</br>
-                    </br>
-                    The chameleons' eyes can rotate and focus separately on 180-degree arcs, so they can see two different objects at the same time. This gives them a full 360-degree field of vision.
-                </p>
-            </div>
-            <div class="item">
-                <a href="https://origami.me/pigeon/"><img src="https://origami.me/wp-content/uploads/2018/01/pigeon-9.jpg"width=300 height=300/></a>
-                <div class="head">
-                    <h1>Pigeon</br>
-                </div>
-                <h1><i><u>Interesting Facts about Pigeon</u> </i></br>
-                    <h3>Baby pigeons eat food that their parents eat and then regurgitate (throw up). </br>
-                    </br>
-                    Adult pigeons eat almost any organic food they can find.</br>
-                </br>
-                Pigeons are also known as "rock doves". They are monogamous and will lay one to two eggs that hatch within eighteen days.</br>
-            </div>
-            <div class="item">
-                <a href="https://origami.me/teddy-bear/"><img src="https://origami.me/wp-content/uploads/2018/05/teddy-16-min.jpg"width=300 height=300/></a>
-                <div class="head">
-                    <h1>Teddy-bear</br>
-                </div>
-                <h1><i><u>Interesting Facts about Teddy-Bear</u> </i></br>
-                <h3>The teddy was named after President Theodore Roosevelt, after he refused to shoot a bear during a 1902 hunting trip.</br>
-                </br>
-                A teddy has been into space! Magellan T Bear boarded Space Shuttle Discovery in 1995 as part of a school project.</br>
-                </br>
-                Bear toys were called 'Bruins' in those days. The first advertisement for Bruins appeared in the American toy trade magazine Playthings in May 1906.</br>
-
-            </div>
-            <div class="item">
-                <a href="https://origami.me/panda/"><img src="https://origami.me/wp-content/uploads/2018/05/panda-9-min.jpg"width=300 height=300/></a>
-                <div class="head">
-                    <h1>Panda</br>
-                </div>
-                <h1><i><u>Interesting Facts about Panda</u> </i></br>
-                </br>
-                <h3>An adult can eat 12–38 kilos of bamboo per day!</br>
-                </br>
-                A giant panda is much bigger than your teddy bear.</br>
-                </br>
-                Giant pandas can't stand and do kung fu moves like Po in Kungfu Panda. But they are good tree climbers. They can climb trees from 7 months old.</br>
-            </div>
-    
-            <div class="item">
-                <a href="https://origami.me/flying-cicada/"><img src="https://origami.me/wp-content/uploads/2018/05/cicada-11-min.jpg"width=300 height=300/></a>
-            </div>
-            <!-- <div class="head">
-                <h1>Flying-cicada</br>
-            </div> -->
-            <div class="flying">   
-            <h1><i><u>Interesting Facts about Flying-cicada</u> </i></br>
-                <h3>There are around 3,000 cicada species, according to National Geographic, so they vary in size from 0.75 to 2.25 in (2.2 to 5.5 cm) long.</br>
-            </br>
-            Cicadas can be black, brown or green and can have red, white or blue eyes.</br>
-            </br>
-            Their wings are transparent and can seem rainbow-hued when held up to a light source. </br>
-            </div>
-        </div> 
-        <!-- <div class="footer">
-            <a href="#"><img src="fb.png"width=50 height=50/></a>
-            <a href="#"><img src="youtube.png" width=50 height=50/></a>
-            <a href="#"><img src="insta.png"width=50 height=50/></a>
-        </div> -->
-    </body>
-
-</html>
+      </div>
+      <div class="side">
+        <a href="https://ananyaraj21.whjr.site/"><img class="GFG" src="../unknown.png"/></a>
+      </div>
+      <div class="side">
+        <a href="https://giyaprashanthhiremath.whjr.site/"><img class="GFG" src="../unknown.png"/></a>
+      </div>
+    </div>
+    <div class="images">
+      <div class="side">
+        <a href="https://aniyaasangma.whjr.site/"><img class="GFG" src="../Aniya.png"/></a>
+      </div>
+      <div class="side">
+        <a href="http://arathimahesh.whjr.site/"><img class="GFG" src="../Aru.png"/></a>
+      </div>
+      <div class="side">
+        <a href="https://aksharasaini.whjr.site/"><img class="GFG" src="../akshu.png"/></a>
+      </div>
+    </div>
+    <div class="images">
+      <div class="side">
+        <a href="https://adyaapanda.whjr.site/"><img class="GFG" src="../unknown.png"/></a>
+      </div>
+      <div class="side">
+        <a href="http://pahuldeepjagpreets2f.whjr.site/"><img class="GFG" src="../unknown.png"/></a>
+      </div>
+      <div class="side">
+        <a href="https://sreedeepta.whjr.site"><img class="GFG" src="../unknown.png"/></a>
+      </div>
+    </div>
+    <div class="images">
+      <div class="side">
+        <a href="https://pragyanuragdas.whjr.site/"><img class="GFG" src="../Ron.png"/></a>
+      </div>
+      <div class="side">
+        <a href="https://kmyeshwanth.whjr.site/"><img class="GFG" src="../yesh.png"/></a>
+      </div>
+      <div class="side">
+        <a href="https://sreedeepta.whjr.site"><img class="GFG" src="../unknown.png"/></a>
+      </div>
+    </div>
+  </html>
